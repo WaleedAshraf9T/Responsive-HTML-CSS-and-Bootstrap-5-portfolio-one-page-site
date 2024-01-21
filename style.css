@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* -------------- */
+/* mnavbar styles */
+/* -------------- */
+.mynavbar {
+  position: fixed;
+  z-index: 2;
+}
+
+.mynavbar a {
+  font-weight: 500 !important;
+  color: white !important;
+}
+
+/* ------------------- */
+/* hero section styles */
+/* ------------------- */
+.hero {
+  height: 100vh;
+  background-image: url(images/hero2.webp);
+  background-size: cover;
+  flex: 5;
+}
+
+#video-background {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Place the video behind other content */
+}
+
+.hero p {
+  color: grey;
+}
+
+.hero h1 {
+  color: rgba(0, 0, 0, 0.2);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.7);
+  font-weight: 700;
+  font-size: 6rem;
+  text-align: center;
+}
+
+.social{
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.social-icons{
+  height: 40px;
+}
+
+
+/* -------------------- */
+/* about section styles */
+/* -------------------- */
+
+.about{
+  height: 100vh;
+  background-color: black;
+  text-align: center;
+}
+
+.about h1{
+  color: rgba(0, 0, 0, 0.2);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.7);
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+.about p{
+  padding-left: 200px;
+  padding-right: 200px;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  text-align: center;
+}
+
+
+/* ------------------------ */
+/* portfolio section styles */
+/* ------------------------ */
+.portfolio-images{
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/* --------------------- */
+/* skills section styles */
+/* --------------------- */
+#skills{
+  padding: 150px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+#skills>h1{
+  color: rgba(0, 0, 0, 0.2);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.7);
+  font-weight: 700;
+  font-size: 6rem;
+  text-align: center;
+}
+
+/* ---------------------- */
+/* contact section styles */
+/* ---------------------- */
+#contact{
+  height: 100vh;
+  background-color: black;
+}
+
+#contact>h1{
+  color: white;
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-align: center;
+  color: grey;
+}
+
+#contact>a{
+  color: rgba(0, 0, 0, 0.2);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.7);
+  font-weight: 700;
+  font-size: 4rem;
+  text-decoration: none;
+}
+
+/* ---------------------------------------------------- */
+/* ---------------------- 992px ----------------------- */
+/* ---------------------------------------------------- */
+@media (max-width: 992px) {
+  .hero h1 {
+    -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.7);
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .social-icons{
+    height: 35px;
+  }
+
+  .about h1{
+    font-size: 3.5rem;
+  }
+
+  .about p{
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 14px;
+  }
+
+  #skills{
+    padding-left: 80px;
+    padding-right: 80px;
+    height: 100vh;
+    background-color: black;
+    color: white;
+  }
+
+  #skills>h1{
+    font-size: 4rem;
+  }
+
+  #contact>a{
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.7);
+    font-size: 3.5rem;
+  }
+}
+
+/* ---------------------------------------------------- */
+/* ----------------------- 768px ---------------------- */
+/* ---------------------------------------------------- */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .mynavbar a{
+    display: none;
+  }
+  
+  .about p{
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 14px;
+  }
+  
+  #contact>a{
+    -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.8);
+    font-size: 3rem;
+  }
+}
+
+/* ---------------------------------------------------- */
+/* ----------------------- 576px ---------------------- */
+/* ---------------------------------------------------- */
+@media (max-width: 576px) {
+  .hero h1 {
+    -webkit-text-stroke: 0.3px rgba(255, 255, 255, 0.8);
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 12px;
+  }
+
+  .social-icons{
+    height: 25px;
+  }
+
+  .about h1{
+    font-size: 3rem;
+  }
+
+  .about p{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 12px;
+  }
+
+  #skills{
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 100vh;
+    background-color: black;
+    color: white;
+  }
+
+  #skills>h1{
+    font-size: 3rem;
+  }
+
+  #skills p{
+    font-size: 12px;
+  }
+
+  #contact>h1{
+    font-size: 14px;
+  }
+
+  #contact>a{
+    -webkit-text-stroke: 0.3px rgba(255, 255, 255, 0.8);
+    font-size: 1.5rem;
+  }
+}
+
+
+
+/* Track */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #000000; 
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #000000; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(0,0,0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
+}
